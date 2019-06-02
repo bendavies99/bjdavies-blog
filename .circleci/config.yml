@@ -3,7 +3,8 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/php7.1-node-browsers
+      - image: circleci/php:7.3
+      - image: circleci/node:9.9-stretch
     working_directory: ~/bjdavies-blog
     steps:
       - checkout
