@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PSR-2 but allow closing tags and with some Doc Comment stuff added -->
+<ruleset name="Bens Standard">
+    <description>My Custom Standard</description>
+    <file>app</file>
+    <file>tests</file>
+    <exclude-pattern>vendor</exclude-pattern>
+    <exclude-pattern>resources</exclude-pattern>
+    <exclude-pattern>database/</exclude-pattern>
+    <exclude-pattern>storage/</exclude-pattern>
+    <exclude-pattern>node_modules/</exclude-pattern>
+    <rule ref="PSR2">
+        <exclude name="PSR2.Files.ClosingTag" />
+        <exclude name="PSR2.Files.EndFileNewline" />
+    </rule>
+</ruleset>
